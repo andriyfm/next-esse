@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Footer: React.FC = () => {
+export const LayoutFooter: React.FC = () => {
   return <footer>footer</footer>;
 };

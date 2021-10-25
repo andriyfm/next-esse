@@ -1,6 +1,6 @@
-import * as Organism from "components/organisms";
+import { AppLayout } from "components/layouts";
 import * as React from "react";
 
 export const HomeTemplate: React.FC = () => {
-  return <Organism.AppLayout>Home or Dashboard Template</Organism.AppLayout>;
+  return <AppLayout>Home or Dashboard Template</AppLayout>;
 };
