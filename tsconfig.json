@@ -8,11 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -25,14 +21,15 @@
     "strict": true,
     "target": "es2018",
     "baseUrl": "./src",
+    "paths": {
+      "@atoms/*": ["components/atoms/*"],
+      "@layouts/*": ["components/layouts/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@organisms/*": ["components/organisms/*"],
+      "@templates/*": ["components/templates/*"]
+    },
     "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

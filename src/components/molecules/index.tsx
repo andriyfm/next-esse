@@ -1,5 +1,5 @@
 export { DropdownApps } from "./DropdownApps";
-export { DropdownChat } from "./DropdownChat";
+export { DropdownProjects } from "./DropdownProjects";
 export { DropdownExplore } from "./DropdownExplore";
 export { DropdownNotifications } from "./DropdownNotifications";
 export { DropdownUser } from "./DropdownUser";

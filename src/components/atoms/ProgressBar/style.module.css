@@ -1,0 +1,11 @@
+.wrapper {
+  @apply relative h-1 max-w-full overflow-hidden rounded-full;
+}
+
+.base_bar {
+  @apply absolute w-full h-1 bg-gray-100;
+}
+
+.color_bar {
+  @apply relative h-1 transition-all duration-1000 ease-out;
+}

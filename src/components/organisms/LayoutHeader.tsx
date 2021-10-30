@@ -14,7 +14,7 @@ export const LayoutHeader: React.FC = () => {
 
         <div className="flex items-center col-span-1 space-x-8">
           <Molecule.DropdownApps />
-          <Molecule.DropdownChat />
+          <Molecule.DropdownProjects />
           <Molecule.DropdownNotifications />
           <Molecule.DropdownSettings />
           <Molecule.DropdownUser />
