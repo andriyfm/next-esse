@@ -3,7 +3,8 @@ import { Menu, Transition } from "@headlessui/react";
 import { IoChevronDown } from "react-icons/io5";
 
 interface Props {
-  name: string;
+  name?: string;
+  icon?: React.ReactElement;
   children: React.ReactElement | React.ReactElement[];
   menuPosition?: "bottom-left" | "bottom-right" | "top-right" | "top-left";
 }
@@ -25,8 +26,14 @@ export const DropdownMenu: React.FC<Props> = (props) => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <Menu.Button className="flex items-center space-x-1 text-sm font-semibold uppercase">
-        <span className="leading-normal">{props.name}</span>
-        <IoChevronDown className="text-xs text-gray-400" />
+        {props.icon ? (
+          props.icon
+        ) : (
+          <React.Fragment>
+            <span className="leading-normal">{props.name}</span>
+            <IoChevronDown className="text-xs text-gray-400" />
+          </React.Fragment>
+        )}
       </Menu.Button>
 
       <Transition
