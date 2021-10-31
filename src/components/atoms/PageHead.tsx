@@ -7,7 +7,6 @@ export const PageHead: React.FC = () => {
     <NextHead>
       <title>{APP_NAME} - Next.js Admin Template</title>
       <meta name="description" content={APP_DESCRIPTION} />
-      <link rel="icon" href="/favicon.ico" />
     </NextHead>
   );
 };
