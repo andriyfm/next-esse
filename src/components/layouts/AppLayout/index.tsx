@@ -1,6 +1,7 @@
 import * as Atom from "components/atoms";
-import * as Organism from "components/organisms";
 import * as React from "react";
+import { LayoutHeader } from "./LayoutHeader";
+import { LayoutSider } from "./LayoutSider";
 
 export const AppLayout: React.FC = (props) => {
   return (
@@ -9,11 +10,11 @@ export const AppLayout: React.FC = (props) => {
 
       <div className="flex items-start justify-start">
         <div className="w-64">
-          <Organism.LayoutSider />
+          <LayoutSider />
         </div>
         <div className="flex-1">
-          <Organism.LayoutHeader />
-          <Organism.LayoutBody>{props.children}</Organism.LayoutBody>
+          <LayoutHeader />
+          <main className="p-4">{props.children}</main>
         </div>
       </div>
     </React.Fragment>
