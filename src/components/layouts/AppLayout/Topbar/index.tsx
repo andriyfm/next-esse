@@ -2,7 +2,7 @@ import * as Atom from "components/atoms";
 import * as Molecule from "components/molecules";
 import * as React from "react";
 
-export const LayoutHeader: React.FC = () => {
+export const Topbar: React.FC = () => {
   return (
     <header className="px-4 bg-white border-b border-gray-100">
       <div className="flex items-center justify-between h-16">
